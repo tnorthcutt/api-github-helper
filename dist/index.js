@@ -6298,7 +6298,7 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2);
   //   console.log(`The event payload: ${payload}`);
 
-  console.log(payload.pull_request);
+  console.log(payload);
 } catch (error) {
   core.setFailed(error.message);
 }
